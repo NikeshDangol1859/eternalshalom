@@ -1,0 +1,40 @@
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-main {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links a {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .home-header {
+      width: 90%;
+    }
+  
+    .home-text h1 {
+      font-size: 30px;
+    }
+  
+    .home-text p {
+      font-size: 20px;
+    }
+  
+    .home-image {
+      width: 150px;
+      height: 150px;
+      top: 50%;
+      right: 20px;
+    }
+  
+    .about-content {
+      width: 95%;
+    }
+  
+    .contact-form, .contact-info {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
