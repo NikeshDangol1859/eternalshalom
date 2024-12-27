@@ -115,6 +115,7 @@ a{
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: bold;
     transition: color 0.3s ease, background-color 0.5s ease;
     z-index: 1;
     font-family: inherit;
@@ -141,7 +142,7 @@ a{
   .nav-container .nav-main .nav-links a:hover {
     color: #000000; 
     transition: color 0.3s ease;
-    border-radius: 0 15px 0 15px;
+    border-radius: 0 20px 0 20px;
   }
 
   /* Home style */
@@ -380,35 +381,38 @@ a{
     }
     
     /* gallery */
-    
+
     /* Gallery Grid */
 .gallery-container {
+  width: 100%;
+  background: linear-gradient(to bottom, #009ffd, #2a2a72);
   padding: 20px;
 }
 
-.gallery-grid {
+.gallery-container .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
 }
 
-.gallery-item {
+.gallery-container .gallery-grid  .gallery-item {
   cursor: pointer;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
+  align-items: center;
 }
 
-.gallery-item img {
+.gallery-container .gallery-grid .gallery-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1);
+.gallery-container .gallery-grid  .gallery-item:hover img {
+  transform: scale(1.2);
 }
 
 /* Modal */
@@ -428,24 +432,26 @@ a{
 .modal-content {
   position: relative;
   background: #fff;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  max-width: 90%;
-  max-height: 90%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 95%;
+  max-height: 95%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+  overflow: hidden;
+  object-fit: cover;
 }
-
 .modal-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  width: auto;
+  height: 600px;
+  margin: auto;
 }
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: 700;
   background: transparent;
   border: none;
   color: #333;
