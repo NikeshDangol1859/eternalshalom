@@ -9,7 +9,7 @@ function Nav() {
         <div className="nav-logos">
             <img src="/logo.png" alt="logo" />
             <Link to={"/"}> <h1>Eternal Shalom Secondary School</h1></Link>
-        </div>
+        </div>     
         <div className="nav-links">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
@@ -17,6 +17,7 @@ function Nav() {
             <Link to="/gallary">Gallery</Link>
             <Link to="/contact">Contact</Link>
         </div>
+        
 
         </div>
         

@@ -35,9 +35,9 @@ function About() {
   <div className="about-content">
     <div className="about-links">
       <h2>Quick Navigation</h2>
-      <Link to="#introduction">Introduction</Link>
-      <Link to="#features">Features</Link>
-      <Link to="#mission">Mission</Link>
+      <a href="#introduction">Introduction</a>
+      <a href="#features">Features</a>
+      <a href="#mission">Mission</a>
     </div>
     <div className="about-details">
       <div id="introduction">

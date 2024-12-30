@@ -1,40 +1,183 @@
-/* Media Queries */
-@media (max-width: 768px) {
-    .nav-main {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-links a {
-      margin-left: 0;
-      margin-bottom: 10px;
-    }
-  
-    .home-header {
-      width: 90%;
-    }
-  
-    .home-text h1 {
-      font-size: 30px;
-    }
-  
-    .home-text p {
-      font-size: 20px;
-    }
-  
-    .home-image {
-      width: 150px;
-      height: 150px;
-      top: 50%;
-      right: 20px;
-    }
-  
-    .about-content {
-      width: 95%;
-    }
-  
-    .contact-form, .contact-info {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .nav-container .nav-main {
+    flex-direction: column;
+    align-items: center;
   }
+  .nav-container .nav-main .nav-links {
+    margin-top: 10px;
+  }
+  .nav-container .nav-main .nav-links a {
+    font-size: 12px;
+    padding: 0.6em 1.5em;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-container .nav-main .nav-links a {
+    font-size: 18px;
+    padding: 0.5em 1em;
+  }
+  .home-container .home-header {
+    width: 70%;
+  }
+  .home-container .home-header .home-text h1 {
+    font-size: 35px;
+  }
+  .home-container .home-header .home-text p {
+    font-size: 22px;
+  }
+  .home-container .home-header .home-buttons .apply,
+  .home-container .home-header .home-buttons .learn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .about-container .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container .about-content .about-links,
+  .about-container .about-content .about-details {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container .nav-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-container .nav-main .nav-logos h1 {
+    font-size: 20px;
+  }
+   .home-container .home-header {
+    width: 80%;
+  }
+  .home-container .home-header .home-text h1 {
+    font-size: 28px;
+  }
+  .home-container .home-header .home-text p {
+    font-size: 18px;
+  }
+  .home-container .home-image {
+    width: 150px;
+    height: 150px;
+    top: 65%;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form, .contact-info {
+    width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-left,
+  .footer-mid,
+  .footer-right {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-container .nav-main .nav-logos h1 {
+    font-size: 16px;
+  }
+  .nav-container .nav-main {
+    padding: 5px;
+  }
+  .nav-container .nav-main .nav-logos img {
+    height: 50px;
+  }
+  .nav-container .nav-main .nav-links a {
+    font-size: 9px;
+    padding: 0.5em 1em;
+  }
+  .home-container .home-header {
+    width: 90%;
+  }
+  .home-container .home-header .home-text h1 {
+    font-size: 24px;
+  }
+  .home-container .home-header .home-text p {
+    font-size: 16px;
+  }
+  .home-container .home-header .home-buttons .apply,
+  .home-container .home-header .home-buttons .learn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .home-container .home-image {
+    width: 120px;
+    height: 120px;
+    top: 75%;
+  }
+  .about-container .about-content {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .about-container .about-content .about-links,
+  .about-container .about-content .about-details {
+    width: 100%;
+  }
+  .gallery-container .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .modal-image {
+    width: auto;
+    height:250px;
+    margin: auto;
+  }
+  .footer-content {
+    padding: 10px;
+    gap: 10px;
+  }
+  .footer-right iframe {
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-container .nav-main .nav-links a {
+    font-size: 8px;
+    padding: 0.5em 1em;
+  }
+  .home-container .home-header .home-text h1 {
+    font-size: 20px;
+  }
+  .home-container .home-header .home-text p {
+    font-size: 14px;
+  }
+  .home-container .home-header .home-buttons .apply,
+  .home-container .home-header .home-buttons .learn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .contact-container {
+    gap: 10px;
+  }
+  .modal-image {
+    width: auto;
+    height:200px;
+    margin: auto;
+  }
+  .footer-content {
+    gap: 5px;
+  }
+  .footer-right iframe {
+    width: 90%;
+    height: 120px;
+  }
+}
+@media (max-width: 350px) {
+  .nav-container .nav-main .nav-links a {
+    font-size: 6px;
+    padding: 0.5em 1em;
+  }
+}
