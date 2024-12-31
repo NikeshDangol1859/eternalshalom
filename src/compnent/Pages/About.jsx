@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../Footer'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import ScrollUp from '../ScrollUp'
 
 function About() {
+  const location = useLocation();
+  useEffect(() => {
+
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
   return (
     <>
     <div className="about-container">
@@ -32,14 +42,14 @@ function About() {
     </div>{/*About imgslider Div Close */}
 
   
-  <div className="about-content">
+  <div className="about-content" id='about'>
     <div className="about-links">
       <h2>Quick Navigation</h2>
       <a href="#introduction">Introduction</a>
       <a href="#features">Features</a>
       <a href="#mission">Mission</a>
     </div>
-    <div className="about-details">
+    <div className="about-details" >
       <div id="introduction">
         <h2>Introduction</h2>
         <p>

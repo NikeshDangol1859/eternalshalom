@@ -17,7 +17,7 @@ function Home() {
             </div>
             <div className="home-buttons">
             <Link className='apply'>Apply Now</Link>
-            <Link className='learn' to={'/about'}>Learn More</Link>
+            <Link className='learn' to={'/about#about'}>Learn More</Link>
             </div>
 
 
